@@ -12,43 +12,36 @@ export default function Home() {
     margin: 0,
   }
     return (
-        <div className="main_container">
-          <img className="logo" src={require('./logo.svg')} alt="native-logo" />
-          <ul className="row">
-            <li>
-              <Link className="btn  btn-outline-dark" to="/colors">Colors</Link>
-            </li>
-            <li>
-              <Link className="btn  btn-outline-dark" to="/nativeschools">Schools</Link>
-            </li>
-            <li>
-              <Link className="btn  btn-outline-dark" to="/writerapp">Writer</Link>
-            </li>
-            <li>
-              <Link className="btn  btn-outline-dark" to="/counter">Counter</Link>
-            </li>
-            <li>
-              <Link className="btn  btn-outline-dark" to="/kanban">Kanban</Link>
-            </li>
-            <li>
-              <Link className="btn  btn-outline-dark" to="/finder">Finder</Link>
-            </li>
-            <li>
-              <Link className="btn  btn-outline-dark" to="/applist">Apps 237</Link>
-            </li>
-          </ul>
-        <footer>
-          <ul className="row">
-            <li style={footerLinks}>
-            <Link className="footer" to="/sponsors" 
-            ><p>Sponsored by </p></Link>
-            </li>
-            <li style={footerLinks}>
-            <Link className="footer" to="/missions" 
-            > <p>Missions & Vision</p></Link>
-            </li>
-          </ul>
-          </footer>
-        </div>
-  );
+		<div className="main_container">
+			<img className="logo" src={require('./logo.svg')} alt="native-logo" />
+			<ul className="row">
+				<li>
+					<Link className="btn  btn-outline-dark" to="/comingsoon">
+						Coming Soon
+					</Link>
+				</li>
+			</ul>
+			<footer>
+				<ul className="row bottomMenu">
+					<li style={footerLinks}>
+						<Link className="footer" to="/missions">
+							{' '}
+							<p>Missions & Vision</p>
+						</Link>
+					</li>
+					<li style={footerLinks}>
+						<Link className="footer" to="/sponsors">
+							<p>Sponsors </p>
+						</Link>
+					</li>
+					<li style={footerLinks}>
+						<Link className="footer" to="/missions">
+							{' '}
+							<p>About Us</p>
+						</Link>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	);
 }

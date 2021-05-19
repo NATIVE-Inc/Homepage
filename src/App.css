@@ -4,7 +4,7 @@ html, body, #root, .main_container {
     height: 100%;
 }
 .logo {
-    width: 15%;
+    width: 15em;
     padding: 2% 0;  
 }
 
@@ -45,4 +45,10 @@ footer {
 .footer {
     color: black;
         padding: 0 30px;
+}
+
+.bottomMenu {
+        list-style: none;
+        
+    padding: 0;
 }
