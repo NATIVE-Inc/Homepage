@@ -1,10 +1,9 @@
-# Playground
+# NATIVE
 
-This is @realJema *playground* with react to learn how it works and t work on some interesting projects. 
-
+Innovative Solutions for Africa
 
 ## Projects 
-Description of projects found in this playground 
+The following are projects developed and owned by **NATIVE**
 
 
 ### Finder 
