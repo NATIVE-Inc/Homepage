@@ -103,6 +103,24 @@ app.post('/native/api/finder/details', function (req, res) {
 		}
 	})
 });
+/*
+  Route: /native/api/finder/search
+  Type: POST
+  Description: query data 
+*/
+app.post('/native/api/finder/search', function (req, res) {
+	const { query } = req.body; /* ID of the last post */
+	mods.Finder.find({ title: { $regex: new RegExp(query, 'i') } }, function (err, posts) {
+		if (err) {
+			res.status(401).send('Internal Server Error');
+		} else {
+			// sending all the posts fetch from the database
+			console.log('[' + getCurrentTime() + '] - Search Query Data');
+			console.log(posts.length);
+			res.status(200).send(posts);
+		}
+	});
+});
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
  *  end: Finder Routes
